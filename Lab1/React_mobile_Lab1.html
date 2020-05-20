@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+div{
+   margin-top: 10px;
+    background-color: crimson;
+
+}
+
+.left{
+    
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: space-between;
+
+   
+
+}
+.m{
+	 margin-left: 20px;
+    background-color: rgb(153, 51, 51);
+
+}
+.b{
+    width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+
+    
+}
+
+.d{
+	 width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-color: blue;
+
+
+}
+.c{
+	width: 200px;
+    height: 100px;
+    margin-bottom: 10px;
+    border: solid yellow 3px;
+     margin-left: 20px;
+}
+}
+
+.right{
+    display: flex;
+    flex-grow: 4;
+    margin-left: 20px;
+    flex-direction: column;
+}
+.firstcol{
+    display: flex;
+    margin-left: 50px;
+    flex-direction: row;
+}
+.secondcol{
+    display: flex;
+    flex-direction: row;   
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-grow: 5;
+    align-content: space-between; 
+}
+.secondcol div {
+    width: 299px;
+    height: 190px;
+}
+
+main{
+
+    display: flex;
+}
+    </style>
+</head>
+<body>
+
+    <main>
+
+        <div class="left m">
+            <div class="b">Side 1</div>
+            <div class="b">Side 2</div>
+            <div class="b">Side 3</div>
+            <div class="b">Side 4</div>
+     
+        </div>
+
+        <div class="right m">
+            <div class="firstcol m ">
+                <div class="c">Top 1</div>
+                <div class="c">Top 2</div>
+                <div style="flex-grow: 1;" class="c">Top 3</div>
+
+
+            </div>
+
+            <div class="secondcol m">
+                <div class="d">C11</div>
+                <div class="d">C12</div>
+                <div class="d">C13</div>
+                <div class="d">C21</div>
+                <div class="d">C22</div>
+                <div class="d">C23</div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+    
+</body>
+</html>
